@@ -19,23 +19,21 @@
     <h1>Мій чат-бот</h1>
     <p>Це тестова сторінка з інтегрованим віджетом Voiceflow.</p>
 
-    <script type="text/javascript">
-      (function(d, t) {
-          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-          v.onload = function() {
-            window.voiceflow.chat.load({
-              verify: { projectID: '67e57f93c139a9d84074d316' },
-              url: 'https://general-runtime.voiceflow.com',
-              versionID: 'production',
-              voice: {
-                url: "https://runtime-api.voiceflow.com"
-              }
-            });
+  <script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '67e57f93c139a9d84074d316' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
           }
-          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; 
-          v.type = "text/javascript"; 
-          s.parentNode.insertBefore(v, s);
-      })(document, 'script');
-    </script>
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
 </body>
 </html>
